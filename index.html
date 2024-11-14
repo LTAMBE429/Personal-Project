@@ -1,0 +1,239 @@
+<html>
+ <head>
+  <title>
+   Wardrobe Assistant
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+        }
+        nav a {
+            color: #fff;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        .container {
+            padding: 20px;
+        }
+        .wardrobe-section, .recommendation-section, .history-section {
+            margin-bottom: 40px;
+        }
+        .wardrobe-section img, .recommendation-section img, .history-section img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        .wardrobe-section h2, .recommendation-section h2, .history-section h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .wardrobe-section button, .recommendation-section button, .history-section button {
+            display: block;
+            margin: 0 auto;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        .wardrobe-section button:hover, .recommendation-section button:hover, .history-section button:hover {
+            background-color: #555;
+        }
+        .history-list, .recommendation-list {
+            list-style: none;
+            padding: 0;
+        }
+        .history-list li, .recommendation-list li {
+            background-color: #fff;
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            display: flex;
+            align-items: center;
+        }
+        .history-list li img, .recommendation-list li img {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+        .history-list li div, .recommendation-list li div {
+            flex-grow: 1;
+        }
+  </style>
+ </head>
+ <body>
+  <header>
+   <h1>
+    Wardrobe Assistant
+   </h1>
+  </header>
+  <nav>
+   <a href="#wardrobe">
+    Wardrobe
+   </a>
+   <a href="#recommendations">
+    Recommendations
+   </a>
+   <a href="#history">
+    History
+   </a>
+  </nav>
+  <div class="container">
+   <section class="wardrobe-section" id="wardrobe">
+    <h2>
+     Wardrobe
+    </h2>
+    <img alt="A picture of a wardrobe filled with various clothes including shirts, pants, and dresses" height="300" src="https://storage.googleapis.com/a1aa/image/j6HgriQcevUjXSQ0ZrKklr0n12kp1PJe4RMJ2TELoJy5hvwTA.jpg" width="300"/>
+    <button>
+     Take a Picture
+    </button>
+   </section>
+   <section class="recommendation-section" id="recommendations">
+    <h2>
+     Recommendations
+    </h2>
+    <ul class="recommendation-list">
+     <li>
+      <img alt="A stylish summer dress in a floral pattern" height="50" src="https://storage.googleapis.com/a1aa/image/c0rVyInulfwkASs36flu5IUEiQVmEK72tE53EkvFbBdIivwTA.jpg" width="50"/>
+      <div>
+       <p>
+        Summer Dress
+       </p>
+       <button>
+        Buy Now
+       </button>
+      </div>
+     </li>
+     <li>
+      <img alt="A pair of winter boots in brown leather" height="50" src="https://storage.googleapis.com/a1aa/image/bc8zoYG10QpgPxNuP9ype2tQVfvjTFZOAEK3DfAvn1bIEfCPB.jpg" width="50"/>
+      <div>
+       <p>
+        Winter Boots
+       </p>
+       <button>
+        Buy Now
+       </button>
+      </div>
+     </li>
+     <li>
+      <img alt="A formal suit in dark blue color" height="50" src="https://storage.googleapis.com/a1aa/image/GKde40agjrUSe0IoEd1yifpX8Wext5msRyjHkY9m7d1aIeFeE.jpg" width="50"/>
+      <div>
+       <p>
+        Formal Suit
+       </p>
+       <button>
+        Buy Now
+       </button>
+      </div>
+     </li>
+     <li>
+      <img alt="A casual t-shirt in white color" height="50" src="https://storage.googleapis.com/a1aa/image/cHyJsTYquJIHPZ4QeEz3qTuUfAICnKcxqWMTomJUAvfGEfCPB.jpg" width="50"/>
+      <div>
+       <p>
+        Casual T-Shirt
+       </p>
+       <button>
+        Buy Now
+       </button>
+      </div>
+     </li>
+     <li>
+      <img alt="A pair of running shoes in black color" height="50" src="https://storage.googleapis.com/a1aa/image/vh7JcV1y84pwPpxEfR9r6Y11lZgpSRpm6CUnLxToyAFfhvwTA.jpg" width="50"/>
+      <div>
+       <p>
+        Running Shoes
+       </p>
+       <button>
+        Buy Now
+       </button>
+      </div>
+     </li>
+    </ul>
+   </section>
+   <section class="history-section" id="history">
+    <h2>
+     History
+    </h2>
+    <ul class="history-list">
+     <li>
+      <img alt="A picture of a red dress worn on a date night" height="50" src="https://storage.googleapis.com/a1aa/image/qmIE0d5MT26eFav1eLFoehruoSP1qVLQ4dMKHCfrdlEKIeFeE.jpg" width="50"/>
+      <div>
+       <p>
+        Red Dress - Date Night
+       </p>
+       <p>
+        Last Worn: 2023-09-15
+       </p>
+      </div>
+     </li>
+     <li>
+      <img alt="A picture of a blue jeans worn on a casual outing" height="50" src="https://storage.googleapis.com/a1aa/image/cf3i3VjlREQAHSVAaTCOIYSmoeM7fdW0HJHVIc83nWB5DfCPB.jpg" width="50"/>
+      <div>
+       <p>
+        Blue Jeans - Casual Outing
+       </p>
+       <p>
+        Last Worn: 2023-09-10
+       </p>
+      </div>
+     </li>
+     <li>
+      <img alt="A picture of a black suit worn at a formal event" height="50" src="https://storage.googleapis.com/a1aa/image/JbRyYepdo93ev0HrbzzZttXA84it5ynycWjerv4ibsuwDfCPB.jpg" width="50"/>
+      <div>
+       <p>
+        Black Suit - Formal Event
+       </p>
+       <p>
+        Last Worn: 2023-08-25
+       </p>
+      </div>
+     </li>
+     <li>
+      <img alt="A picture of a white t-shirt worn during a workout" height="50" src="https://storage.googleapis.com/a1aa/image/LpC83nTno77DAN8koGH1JMgy5AnkGtnSU1Mjf72N62l9wX4JA.jpg" width="50"/>
+      <div>
+       <p>
+        White T-Shirt - Workout
+       </p>
+       <p>
+        Last Worn: 2023-08-20
+       </p>
+      </div>
+     </li>
+     <li>
+      <img alt="A picture of a green jacket worn on a hiking trip" height="50" src="https://storage.googleapis.com/a1aa/image/sJ208t4MGdIDEhenfNnBjT1XbJmftFHkThgPkhRgffDEQ8FeE.jpg" width="50"/>
+      <div>
+       <p>
+        Green Jacket - Hiking Trip
+       </p>
+       <p>
+        Last Worn: 2023-08-15
+       </p>
+      </div>
+     </li>
+    </ul>
+   </section>
+  </div>
+ </body>
+</html>
